@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Login</title>
+</head>
+<body>
+    <label>Username</label>
+    <input type="text" id="username"/>
+    <br>
+    <label>password</label>
+    <input type="text" id="password"/>
+    <br/>
+    <button type="submit" onclick="login()">login</button>
+</body>
+</html>
+<script>
+    var login=()=>{
+        var un=document.getElementById("username");
+        var username=un.value;
+        var pw=document.getElementById("password");
+        var password=pw.value
+        localStorage.setItem("username",username)
+        window.location.href="studentHome.html"
+    }
+</script>

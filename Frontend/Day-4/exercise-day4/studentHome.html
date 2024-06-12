@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Home</title>
+</head>
+
+<body>
+    Hi <h1 id="username" ></h1>
+        <br>
+        <button type="button" onclick="logout()">Logout</button>
+        <br>
+        <p id="responseData"></p>
+</body>
+
+</html>
+
+<script>
+    var fetchData=async()=>{
+        var response=await fetch("https://jsonplaceholder.typicode.com/posts");
+        var data =await response.json();
+        console.log("data",data);
+        var displayData=''
+        data.forEach(element => {
+            displayData=displayData+'<br>' +'Title:'+element.title+'<br>'+'Body:'+element.body+'<hr>';
+        });
+        document.getElementById("responseData").innerHTML=displayData;
+    }
+    fetchData();
+
+    var name = localStorage.getItem("username");
+    if (name === null) {
+        window.location.href = "studentLogin.html"
+    }
+    else {
+        document.getElementById("username").innerHTML = name
+    }
+
+    var logout = () => {
+        localStorage.removeItem("username");
+        localStorage.removeItem("password");
+        document.location.href = "studentLogin.html"
+    }
+
+    
+</script>

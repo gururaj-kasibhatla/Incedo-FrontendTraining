@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    
+        function add(){
+            var input1=document.getElementById("numberA");
+            var input2=document.getElementById("numberB");
+            var a=parseInt(input1.value);
+            var b=parseInt(input2.value);
+            
+        document.getElementById("resultC").innerHTML=a+b;
+        }
+        function sub(){
+            var input1=document.getElementById("numberA");
+            var input2=document.getElementById("numberB");
+            var a=parseInt(input1.value);
+            var b=parseInt(input2.value);
+        document.getElementById("resultC").innerHTML=a-b;
+        }
+        function mul(){
+            var input1=document.getElementById("numberA");
+            var input2=document.getElementById("numberB");
+            var a=parseInt(input1.value);
+            var b=parseInt(input2.value);
+        document.getElementById("resultC").innerHTML=a*b;
+        }
+        function div(){
+            var input1=document.getElementById("numberA");
+            var input2=document.getElementById("numberB");
+            var a=parseInt(input1.value);
+            var b=parseInt(input2.value);
+        document.getElementById("resultC").innerHTML=a/b;
+        }
+    </script>
+</head>
+<body>
+    <label>A</label>
+    <input type="number" id="numberA" />
+    <label>B</label>
+    <input type="number" id="numberB" />
+
+    <button type="button" onclick="add()" id="add">Add</button>
+    <button type="button" onclick="sub()" id="sub">Sub</button>
+    <button type="button" onclick="mul()" id="mul">Mul</button>
+    <button type="button" onclick="div()" id="div">Div</button>
+
+    <br/>
+    <b id="resultC"></b>
+</body>
+
+</html>
+
+

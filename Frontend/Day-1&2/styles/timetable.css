@@ -1,0 +1,25 @@
+th{
+    border: black 1px solid;
+    background-color: blue;
+    color: white
+}
+tr{
+    border: black 1px solid;
+}
+td{
+    border: black 1px solid;
+}
+table{
+    border: black 1px solid;
+}
+.content{
+    background-color: gray;
+}
+@media screen and (max-width:480px){
+    .content{
+    background-color: blue;
+    }
+}
+@media print{
+   .content{ background-color: red;}
+}

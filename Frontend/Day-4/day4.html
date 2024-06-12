@@ -1,0 +1,57 @@
+<script>
+    var getPosts = async () => {
+        var url = "https://jsonplaceholder.typicode.com/posts";
+        var respone = await fetch(url);
+        var data = await respone.json()
+        console.log(data)
+    }
+    getPosts();
+
+    var getPostById = async (id) => {
+        var url = "https://jsonplaceholder.typicode.com/posts/" + id;
+        var respone = await fetch(url);
+        var data = await respone.json()
+        console.log(data)
+    }
+    getPostById(38);
+
+    var insertPost = async () => {
+        var samplePost = { userId: 4, title: 'sample post', body: 'for demo' }
+        var url = "https://jsonplaceholder.typicode.com/posts";
+        var respone = await fetch(url, {
+            body: JSON.stringify(samplePost),
+            headers:{
+                'Content-Type':"application/json"
+            },
+            method:'POST'
+        });
+        var data = await respone.json()
+        console.log(data)
+    }
+    insertPost();
+
+    var updatePost = async (id) => {
+        var samplePost = { userId: 4, title: 'sample post', body: 'for demo' }
+        var url = "https://jsonplaceholder.typicode.com/posts/"+id;
+        var respone = await fetch(url, {
+            body: JSON.stringify(samplePost),
+            headers:{
+                'Content-Type':"application/json"
+            },
+            method:'PUT'
+        });
+        var data = await respone.json()
+        console.log(data)
+    }
+    updatePost(10);
+
+    var deletePost = async (id) => {
+        var url = "https://jsonplaceholder.typicode.com/posts/"+id;
+        var respone = await fetch(url, {
+            method:'DELETE'
+        });
+        var data = await respone.json()
+        console.log(data)
+    }
+    deletePost(10);
+</script>
