@@ -27,6 +27,9 @@ export default function Menu() {
                             <Link to='/'>
                                 <Button>Contact Us</Button>
                             </Link>
+                            <Link to='/addcar'>
+                                <Button>Add Car</Button>
+                            </Link>
                         </ButtonGroup>
                     </Col>
                 </Row>

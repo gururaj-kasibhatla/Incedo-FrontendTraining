@@ -14,18 +14,40 @@
       "id": "526a",
       "name": "orange",
       "price": "454"
-    },
-    {
-      "id": "9d9b",
-      "name": "potato",
-      "price": "67"
     }
   ],
   "users": [
     {
-      "id": "1",
-      "fname": "Firstname",
-      "lname": "Lastname"
+      "fname": "sfadsfadsdsfgsd",
+      "lname": "das",
+      "gender": "male",
+      "hobbies": [
+        "cricket",
+        "reading"
+      ],
+      "team": "backend",
+      "id": "1177"
+    },
+    {
+      "id": "5340",
+      "fname": "tgdsfs",
+      "lname": "sdgdf",
+      "gender": "female",
+      "hobbies": [
+        "reading"
+      ],
+      "team": "Backend",
+      "terms": true
+    }
+  ],
+  "cars": [
+    {
+      "id": "a6cd",
+      "image": "safsda",
+      "name": "dsgdsf",
+      "price": 2321,
+      "mileage": 324235,
+      "seats": 3
     }
   ]
 }
