@@ -1,0 +1,5 @@
+1. Create a new react application - "contextreact"
+2. Create a context at MyContext.js in the name of "MyContext"
+3. Include the MyContext as provider with the value as sharedData [age] at App.js
+4. Create a MyContextChild 
+5. Inside MyContext load the MyContextChild at App.js
