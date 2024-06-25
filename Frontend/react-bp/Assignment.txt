@@ -1,0 +1,15 @@
+1. Create a new project redux-bp
+2. Action.js
+  2.1 create two functions increment, decrement each returning a type of INCREMENT and DECREMENT respectively
+3. Reducer.js
+  3.1 Create counterReducer to update the state with increment and decrement action
+4. Store.js
+  4.1 Convert the counterReducer to createStore using redux
+5. CounterView.js
+  5.1 Show the counter value only
+6. CounterAdd.js
+  6.1 Have a button to increment
+6. CounterMinus.js
+  6.1 Have a button to decrement
+6. App.js
+  6.1 Include the Counter component under the Provider from redux
