@@ -1,0 +1,36 @@
+{
+  "milestones": [
+    {
+      "milestone": "Add Database Design",
+      "project": "Library Management",
+      "stage": "Done",
+      "completionDate": "12/05/2024",
+      "TL": "Ankit Gupta",
+      "AssignedTo": "Deepika Mittal",
+      "id": "1"
+    },
+    {
+      "milestone": "Create APIs",
+      "project": "Library Management",
+      "stage": "To Do",
+      "completionDate": "12/05/2024",
+      "TL": "Ankit Gupta",
+      "AssignedTo": "Ankit Gupta",
+      "id": "2"
+    }
+  ],
+  "users": [
+    {
+      "id": "e4e2",
+      "fullName": "Deepika Mittal",
+      "email": "deepika.mittal@gmail.com",
+      "password": "deepika"
+    },
+    {
+      "id": "e659",
+      "fullName": "Ankit Gupta",
+      "email": "ankit.g@gmail.com",
+      "password": "ankit"
+    }
+  ]
+}
