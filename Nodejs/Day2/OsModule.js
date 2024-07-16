@@ -1,0 +1,7 @@
+const os=require('os')
+console.log('CPU arch',os.arch())
+console.log('Free mem', os.freemem())
+console.log('Total mem', os.totalmem())
+console.log('Network interfaces', os.networkInterfaces())
+console.log('Temp dir', os.tmpdir())
+console.log('release', os.release())
