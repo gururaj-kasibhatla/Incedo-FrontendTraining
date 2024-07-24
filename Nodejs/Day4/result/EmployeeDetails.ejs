@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Employee Details </title>
+    </head>
+    <body>
+        <h1>Employee List</h1>
+        <a href="/employee/newEmployee">New Employee</a>
+        <table>
+            <tr>
+                <th>Employee id </th>
+                <th>Employee Name</th>
+                <th>Salary</th>
+            </tr>
+            <% empobj.forEach(employee=>
+            {%><tr>
+
+
+                <td><%=employee.id%></td>
+                <td><%=employee.name%></td>
+                <td><%=employee.salary%></td>
+                <td><a href="/employee/updateEmployee/<%=employee.id%>">Update Employee</a> </td>
+            </tr>
+            <%        
+        })%>
+    </ul>
+</body>
